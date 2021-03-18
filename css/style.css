@@ -1,0 +1,336 @@
+.Navbar {
+  margin: 0px;
+  padding: 30px 0px 0px 0px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 990px) {
+  .Navbar {
+    padding: 10px 0px 0px 0px;
+  }
+}
+
+.navparent {
+  width: 100%;
+}
+
+.navLogo {
+  flex-flow: row wrap;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.logo {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 900;
+  padding: 20px 0px 0px 0px;
+}
+
+.iconLogo {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.iconSearch,
+.iconCart {
+  padding: 0px 10px;
+  height: 40px;
+  width: 40px;
+}
+
+.iconSearch {
+  position: absolute;
+  left: 10%;
+}
+
+.iconCart {
+  position: absolute;
+  right: 10%;
+}
+
+.navbar-toggler,
+.dropdown-menu li a {
+  margin: auto;
+  margin-right: 10%;
+  display: block;
+  border: none;
+}
+
+.navbar-toggler img {
+  padding: 0px 5px;
+  width: 40px;
+}
+
+.navDimension {
+  display: block;
+  background-color: #e7e6e1;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0px 30px;
+  font-family: "Comic Neue", cursive;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navAttribute {
+  margin: auto;
+}
+
+.navTabs {
+  padding: 0px 12px;
+  font-family: "Karla", sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  color: black;
+}
+.nav-link:hover {
+  border-bottom: 3px solid;
+  background-color: #fde8cd;
+  transition: 0.2s ease-in-out;
+}
+
+.navTabs .dropdown-menu {
+  background-color: #e7e6e1;
+}
+
+.dropdown-item {
+  text-align: center;
+}
+
+.dropdown-menu-inside {
+  display: none;
+  position: relative;
+  width: 100%;
+  list-style: none;
+}
+
+.nav-item-inside:hover .dropdown-menu-inside {
+  display: block;
+}
+
+/* ***********************************navbar-end*********************** */
+
+/* **********************************carousel***************************** */
+
+.carousel {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: fit-content;
+}
+
+.carousel-inner .carousel-item img {
+  object-fit: contain;
+}
+
+.carousel-caption {
+  width: 30%;
+  margin-left: 40%;
+  top: 57% !important;
+  transform: translateY(-80%);
+  text-align: left;
+}
+
+.carousel-caption h1 {
+  font-family: "Reem Kufi", sans-serif;
+  color: black;
+  font-size: 80px;
+}
+
+@media screen and (max-width: 990px) {
+  .carousel-caption h1 {
+    font-size: 40px;
+  }
+}
+
+.carousel-caption p {
+  font-family: "Karla", sans-serif;
+  color: black;
+  font-size: 15px;
+  padding-left: 2px;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+  text-align: left;
+}
+
+.carousel-caption button {
+  float: left;
+}
+
+.shopnowbtn {
+  border-radius: 0 !important;
+  font-family: "Reem Kufi", sans-serif;
+  background-color: burlywood;
+  color: black;
+}
+
+/* **************************carousel-end*************************** */
+
+/* *****************************feature****************************** */
+.feature-header {
+  margin: auto;
+  text-align: center;
+  font-family: "Reem Kufi", sans-serif;
+  color: black;
+  font-size: 50px;
+}
+
+.feature-container {
+  margin: 2% 15%;
+}
+
+@media screen and (max-width: 990px) {
+  .feature-container {
+    margin: 2% 5%;
+  }
+}
+
+.feature-content {
+  margin: 3%;
+  cursor: pointer;
+}
+
+.feature-content img {
+  border-radius: 0 !important;
+}
+
+.feature-content:hover {
+  opacity: 0.7;
+  transition: 0.6s ease;
+}
+
+.card-img-overlay h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Reem Kufi", sans-serif;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+}
+
+@media screen and (max-width: 990px) {
+  .card-img-overlay h2 {
+    font-size: 35px;
+  }
+}
+
+.card-img-overlay p {
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  width: fit-content;
+  margin: auto;
+  padding: 5px;
+}
+
+.card {
+  border: none;
+}
+
+.card-text a {
+  text-decoration: none;
+  color: #c0a587;
+  border-bottom: 1px #c0a587 solid;
+}
+
+.card-text a:hover {
+  color: #fde8cd;
+}
+
+.text-content {
+  margin-top: 50%;
+  text-decoration: none;
+}
+
+/* **********************************feature-end********************************* */
+
+/* *************************edit line ********************** */
+
+/* navy navbar */
+
+#nav_container {
+  background-color: #c0a587;
+  margin: 0px;
+  padding: 0px 200px;
+  width: 1136px;
+  position: fixed;
+  top: -65px;
+  display: block;
+  transition: top 0.3s;
+  z-index: 15;
+}
+
+@media screen and (max-width: 800px) {
+  #nav_container {
+    padding: 0px 20px;
+    left: 0px;
+    right: 0px;
+    width: 737px;
+  }
+}
+
+.logo_navy {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  float: left;
+  display: inline-block;
+}
+
+.tabs_navy {
+  list-style: none;
+  padding: 20px 0px 0px 20px;
+  display: inline-block;
+  margin: 0px;
+  width: 400px;
+}
+
+.tabs_navy a {
+  text-decoration: none;
+  color: black;
+}
+
+.tabs_navy .menu_tabs {
+  text-decoration: none;
+  color: black;
+  margin: 0px;
+  float: left;
+}
+
+.tab_right_navy {
+  display: inline-block;
+  padding: 20px 0px 20px 0px;
+  float: right;
+  top: 0px;
+  margin: 0 auto;
+}
+
+.menu_tabs_navy {
+  padding: 0px 12px 20px 12px;
+  font-family: "Karla", sans-serif;
+  float: left;
+}
+.menu_tabs_navy:hover {
+  border-bottom: 3px solid;
+  transition: 0.2s ease-in-out;
+}
+
+.box .sub_menu_tabs {
+  margin: 45px 200px;
+}
+
+@media screen and (max-width: 800px) {
+  .box .sub_menu_tabs {
+    width: 730.4px;
+    margin: 45px 10px;
+  }
+}
