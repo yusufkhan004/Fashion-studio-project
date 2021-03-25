@@ -106,6 +106,8 @@ input[type="text"]:focus {
 .navbar-toggler img {
   padding: 0px 5px;
   width: 40px;
+  border-radius: 5px;
+  border: black solid 1px;
 }
 
 .navDimension {
