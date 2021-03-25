@@ -128,7 +128,7 @@
 	<div class="Navbar navbar-expand-lg navbar-light .bg-transparent">
 		<div class="navparent">
 			<div class="navLogo">
-				<div class="iconSearch">
+				<div class="iconSearch d-lg-block d-xl-block d-none">
 					<form>
 						<input type="text" name="search" placeholder="Search..">
 					</form>
@@ -159,6 +159,11 @@
 					</button>
 					<div class="navDimension collapse navbar-collapse" id="navbarNavDropdown">
 						<ul class="navAttribute navbar-nav">
+							<li class="nav-item navTabs d-lg-none d-xl-none d-block">
+								<form>
+									<input type="text" name="search" placeholder="Search..">
+								</form>
+							</li>
 							<li class="nav-item navTabs">
 								<a class="nav-link menu_tabs active" aria-current="page" href="#">HOME</a>
 							</li>
@@ -207,41 +212,44 @@
 	<!-- **************************************carousel********************************** -->
 
 	<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-				aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-				aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-				aria-label="Slide 3"></button>
-		</div>
-		<div class="carousel-inner">
+
+		<div class="carousel-inner overflow-visible">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+					aria-label="Slide 3"></button>
+			</div>
 			<div class="carousel-item active" data-bs-interval="10000">
-				<img src="images/bgimage111.webp" class="d-block w-100 h-100" alt="...">
-				<div class="carousel-caption d-md-block">
+				<img src="images/bgimage111.webp" class="d-block w-100" alt="...">
+				<div class="carousel-caption  d-block">
 					<h1>Fashionable clothes for trendsetters</h1>
 					<p>Summer New Arrivals.</p>
 					<button type="button" class="text-left shopnowbtn btn btn-secondary btn-lg">Shop Now</button>
+					<br style="clear: both">
 				</div>
 			</div>
 			<div class="carousel-item" data-bs-interval="10000">
 				<img src="images/bgimage12.webp" class="d-block w-100" alt="...">
-				<div class="carousel-caption text-white d-md-block">
+				<div class="carousel-caption d-block d-xl-block">
 					<h1>Discover the new you</h1>
 					<p>Spring Arrivals</p>
 					<button type="button" class="shopnowbtn btn btn-secondary btn-lg">Shop Now</button>
+					<br style="clear: both">
 				</div>
 			</div>
 			<div class="carousel-item" data-bs-interval="10000">
 				<img src="images/bgimage13.webp" class="d-block w-100" alt="...">
-				<div class="carousel-caption text-white d-md-block">
+				<div class="carousel-caption d-block d-xl-block">
 					<h1>Refine yourself, wear us</h1>
 					<button type="button" class="shopnowbtn btn-secondary btn btn-lg">Shop Now</button>
+					<br style="clear: both">
 				</div>
 			</div>
 		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark#carouselExampleDark"
-			data-bs-slide="prev">
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
 			<span class="carousel-control-prev-icon black" aria-hidden="true"></span>
 			<span class="visually-hidden">Previous</span>
 		</button>
@@ -250,6 +258,7 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
+
 
 
 	<!-- *******************************************carousel-end******************************* -->
@@ -561,7 +570,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<i class="fa fa-google-plus"></i>
+										<i class="fa fa-whatsapp"></i>
 									</a>
 								</li>
 								<li>

@@ -55,7 +55,7 @@ input[type="text"] {
   border: 1px solid black;
   border-radius: 20px;
   font-size: 14px;
-  background-color: white;
+  background-color: transparent;
   background-image: url("/images/search.svg");
   display: block;
   background-size: 20px;
@@ -73,6 +73,10 @@ input[type="text"]:focus {
 @media screen and (max-width: 990px) {
   input[type="text"]:focus {
     width: 150px;
+  }
+
+  .nav-item form input {
+    display: inline-flex;
   }
 }
 
@@ -128,10 +132,14 @@ input[type="text"]:focus {
   font-weight: 200;
   color: black;
 }
+
+.nav-link {
+  border-bottom: 3px solid #69b0ac;
+}
+
 .nav-link:hover {
-  border-bottom: 3px solid;
+  border-bottom: 3px solid black;
   background-color: #fde8cd;
-  transition: 0.2s ease-in-out;
 }
 
 .navTabs .dropdown-menu {
@@ -169,33 +177,32 @@ input[type="text"]:focus {
 }
 
 .carousel-inner .carousel-item img {
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .carousel-caption {
   width: 30%;
+  display: table;
   margin-left: 40%;
-  top: 57% !important;
-  transform: translateY(-80%);
+  /* position: absolute; */
+  top: 30%;
+  /* -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
+  /* top: 57% !important; */
+  /* transform: translateY(-80%); */
   text-align: left;
 }
 
 .carousel-caption h1 {
   font-family: "Reem Kufi", sans-serif;
   /* color: black; */
-  font-size: 80px;
-}
-
-@media screen and (max-width: 990px) {
-  .carousel-caption h1 {
-    font-size: 40px;
-  }
+  font-size: 5vw;
 }
 
 .carousel-caption p {
   font-family: "Karla", sans-serif;
   /* color: black; */
-  font-size: 15px;
+  font-size: 1vw;
   padding-left: 2px;
 }
 
@@ -205,7 +212,15 @@ input[type="text"]:focus {
 }
 
 .carousel-caption button {
-  float: left;
+  /* float: left; */
+}
+@media screen and (max-width: 990px) {
+  .carousel-caption h1 {
+    font-size: 5vw;
+  }
+  .carousel-caption p {
+    font-size: 2vw;
+  }
 }
 
 .shopnowbtn {
@@ -213,6 +228,77 @@ input[type="text"]:focus {
   font-family: "Reem Kufi", sans-serif;
   background-color: burlywood;
   color: black;
+}
+
+@media screen and (max-width: 990px) {
+  .carousel-caption {
+    position: relative;
+    width: 50%;
+    min-height: 30%;
+    margin: -10vw 10vw 5vw 10vw;
+    padding: 1vw;
+    background-color: whitesmoke;
+    /* margin-left: 10%;
+    margin-right: 10%;
+    transform: none;
+    position: absolute;
+    display: table-row;
+    top: 80%;
+    width: auto; */
+  }
+
+  .carousel-inner .carousel-item {
+    background-color: white !important;
+  }
+
+  .carousel .carousel-indicators {
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+  }
+  .carousel-caption h1,
+  .carousel-caption p {
+    text-align: center;
+  }
+
+  .carousel-caption button {
+    padding: 10px;
+    font-size: 3vw;
+    margin: auto;
+    display: flex;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    /* display: none; */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .iconCart {
+    position: absolute;
+    right: 1%;
+  }
+  .carousel-inner .carousel-item {
+    height: 150vw;
+  }
+  .carousel-inner .carousel-item img {
+    height: 100vw;
+  }
+  .carousel-caption {
+    padding-bottom: 10px;
+    width: 60%;
+    margin: -65vw 5vw 5vw 5vw;
+  }
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+  .carousel-caption .shopnowbtn {
+    font-size: 1rem;
+  }
 }
 
 /* **************************carousel-end*************************** */
@@ -398,8 +484,8 @@ p {
 .dk-footer .footer-social-link a i.fa-twitter {
   background-color: #55acee;
 }
-.dk-footer .footer-social-link a i.fa-google-plus {
-  background-color: #dd4b39;
+.dk-footer .footer-social-link a i.fa-whatsapp {
+  background-color: #25d366;
 }
 .dk-footer .footer-social-link a i.fa-linkedin {
   background-color: #0976b4;
@@ -430,7 +516,7 @@ p {
 .footer-awarad p {
   color: black;
   margin: auto;
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Reem Kufi", sans-serif;
   font-weight: 500;
   /* margin-left: 20px; */
@@ -458,7 +544,7 @@ p {
 }
 
 .footer-widget ul {
-  width: 50%;
+  width: 60%;
   float: left;
   list-style: none;
   margin: 0;
